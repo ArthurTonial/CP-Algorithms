@@ -1,3 +1,4 @@
+// https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html
 // this code was creator with the intention of 
 // understand how the Sieve of Eratosthenes works
 
@@ -29,12 +30,12 @@ vector<int> primes(long long n) {
 
 
 // says if the index i is prime (true or false)
-/*int n;
-vector<char> is_prime(n+1, true);
+int n;
+vector<bool> is_prime(n+1, true);
 is_prime[0] = is_prime[1] = false;
 for (int i = 2; i * i <= n; i++) {
     if (is_prime[i] && (long long)i * i <= n) {
         for (int j = i * i; j <= n; j += i)
             is_prime[j] = false;
     }
-}*/
+}

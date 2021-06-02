@@ -17,19 +17,10 @@ long long binpow(long long a, long long b){
 }
 
 void solve(){
-	int n, p;
+	int n;
 	scanf("%d",&n);
 
-	p = 2*n - 2;
-
-	long long ans = 0;
-	for (int i = 0; i <= p - n - 2; i++){
-		ans += 4* binpow(3, 2) * binpow(4, p - n - 2);
-	}
-	ans += 2 * 4 * 3 * binpow(4, p - n - 1);
-
-	// poderia ser:
-	// ans = 2*4*3*binpow(4, n-3) + 4*3*3*(n-3)*binpow(4,n-4)
+	long long ans = 2*4*3*binpow(4, n-3) + 4*3*3*(n-3)*binpow(4, n-4);
 
 	printf("%lld", ans);
 }

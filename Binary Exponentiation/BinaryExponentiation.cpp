@@ -1,4 +1,5 @@
-// this code was creator with the intention of 
+// https://cp-algorithms.com/algebra/binary-exp.html
+// this code was creatad with the intention of 
 // understand how the Binary Exponentiation works
 
 #include <bits/stdc++.h>
