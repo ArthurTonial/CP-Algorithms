@@ -28,8 +28,7 @@ vector<int> primes(long long n) {
 	return pr;
 }
 
-/*
-// says if the index i is prime (true or false)
+/*// says if the index i is prime (true or false)
 int n;
 vector<bool> is_prime(n+1, true);
 is_prime[0] = is_prime[1] = false;
@@ -38,5 +37,4 @@ for (int i = 2; i * i <= n; i++) {
         for (int j = i * i; j <= n; j += i)
             is_prime[j] = false;
     }
-}
-*/
+}*/
