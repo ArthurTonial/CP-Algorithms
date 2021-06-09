@@ -1,11 +1,14 @@
 // https://cp-algorithms.com/algebra/binary-exp.html
+
 // this code was creatad with the intention of 
 // understand how the Binary Exponentiation works
+
+// Complexity: O(log exponent)
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// function that gives a^b in O(log n)
+// function that gives a^b
 long long binpow(long long a, long long b){
 
     long long res = 1;

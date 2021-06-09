@@ -1,4 +1,5 @@
 // https://cp-algorithms.com/algebra/primality_tests.html
+
 // ths code was created in the intention of 
 // understand how the Trial division works
 
@@ -16,6 +17,7 @@ bool isPrime(int x){
 	}
 	return true;
 }
+
 
 // Trial division to make a vector with the factorization of x
 vector<long long> factorization(long long x){
@@ -44,8 +46,8 @@ vector<long long> factorization(long long x){
 	return fact;
 }
 
-// This factorization works with Sieve of Eratosthenes algorithm
 
+// This factorization works with Sieve of Eratosthenes algorithm
 vector<long long> primes; // filled in Sieve algorithm
 
 vector<long long> sieveFactorization(long long x){
