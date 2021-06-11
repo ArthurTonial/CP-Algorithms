@@ -20,48 +20,38 @@ bool isPrime(int x){
 
 
 // Trial division to make a vector with the factorization of x
-vector<long long> factorization(long long x){
+vector<long long> factors(long long n) {
 
-	vector<long long> fact;
+    vector<long long> f;
 
-	// it could be made in 'isPrime' too
-	for (int d : {2,3,5}){ 
-		while (x % d == 0){
-			fact.push_back(d);
-			n /= d;
-		}
-	}
+    for (long long d = 2; d * d <= n; d++) {
 
-	static array<int,8> increments = {4,2,4,2,4,6,2,6};
-	int i = 0;
-	for (long long d = 7; d * d <= x; d += increments[i++]){
-		while (x % d == 0){
-			fact.push_back(d);
-			x /= d;
-		}
-		if (i == 8) i = 0;
-	}
-	if (x > 1) fact.push_back(x);
+        while (n % d == 0) {
+            f.push_back(d);
+            n /= d;
+        }
+    }
 
-	return fact;
+    if (n > 1) f.push_back(n);
+    return f;
 }
 
 
 // This factorization works with Sieve of Eratosthenes algorithm
 vector<long long> primes; // filled in Sieve algorithm
 
-vector<long long> sieveFactorization(long long x){
+vector<long long> factorsSieve(long long x){
 
-	vector<long long> fact;
+	vector<long long> f;
 
 	for (long long d : primes){
 		if (d * d > x) break;
 		while (x % d == 0){
-			fact.push_back(d);
+			f.push_back(d);
 			x /= d;
 		}
 	}
-	if (x > 1) fact.push_back(x);
+	if (x > 1) f.push_back(x);
 
-	return fact;
+	return f;
 }
