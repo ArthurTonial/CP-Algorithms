@@ -3,6 +3,8 @@
 // ths code was created in the intention of 
 // understand how the Trial division works
 
+// Complexity: O(sqrt(N))
+
 #include <bits/stdc++.h>
 using namespace std;
 

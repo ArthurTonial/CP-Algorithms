@@ -1,6 +1,9 @@
 // https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html
+
 // this code was creator with the intention of 
 // understand how the Sieve of Eratosthenes works
+
+// Complexity: O(N log log N) finding primes in a segment [1,N]
 
 #include <bits/stdc++.h>
 using namespace std;

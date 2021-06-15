@@ -3,7 +3,7 @@
 // this code was creatad with the intention of 
 // understand how the Breadth First Search works
 
-// Complexity: O(vertices+edges)
+// Complexity: O(vertices + edges)
 
 #include <bits/stdc++.h>
 using namespace std;
